@@ -1,0 +1,51 @@
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Light grey background for the table */
+}
+
+/* Header Styles */
+thead {
+    background-color: #007bff; /* Bright blue background for the header */
+    color: white; /* White text color for header */
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3; /* Darker blue border for header */
+}
+
+/* Body Rows Styles */
+tbody tr:nth-child(even) {
+    background-color: #e9f7f9; /* Very light blue background for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+tbody tr:hover {
+    background-color: #d1f7d6; /* Light green background when hovering over a row */
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd; /* Light grey border for rows */
+}
+
+/* Table Border */
+table, th, td {
+    border: 2px solid #007bff; /* Blue border for table and cells */
+    border-radius: 8px; /* Rounded corners for table and cells */
+}
+
+/* Profile Picture Styles */
+td img {
+    max-width: 80px; /* Limit the width of profile pictures to 80px */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make images circular */
+    border: 2px solid #007bff; /* Blue border around images */
+}

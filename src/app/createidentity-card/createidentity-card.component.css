@@ -1,0 +1,73 @@
+/* Container for the form */
+div {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f9;
+}
+
+/* Heading style */
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Form label styles */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Input field styles */
+input[type="text"] {
+    width: calc(100% - 16px); /* Adjust width to account for padding */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Optional: style the input fields when focused */
+input[type="text"]:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 91, 255, 0.5);
+}
+
+/* Button styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: add spacing between elements */
+br {
+    display: block;
+    margin-bottom: 10px;
+}

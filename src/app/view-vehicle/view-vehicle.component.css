@@ -1,0 +1,45 @@
+/* Base styling for the parent container */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: coral; /* Gradient background */
+    padding: 20px;
+}
+
+/* Styling for the child container */
+.child {
+    background: #ffffff; /* White background for the child container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: center;
+    max-width: 600px; /* Limit the width of the content */
+    width: 100%; /* Ensure it uses full width up to max-width */
+}
+
+/* Style for the image */
+.child img {
+    border-radius: 10px; /* Rounded corners for the image */
+    max-width: 100%; /* Ensure the image scales down */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style for the headings */
+.child h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #333; /* Dark color for the text */
+    margin: 10px 0;
+    padding: 10px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Gradient background for each heading */
+    -webkit-background-clip: text; /* Gradient text effect */
+    -webkit-text-fill-color: transparent; /* Text color transparent to show gradient */
+}
+
+/* Add some hover effects */
+.child h1:hover {
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Change gradient on hover */
+}

@@ -1,0 +1,58 @@
+<div class="parent">
+    <div class="class1">
+
+        <input type="text" [(ngModel)]="term" (keyup)="filter()">
+      
+        
+        Limit : <input type="number" [(ngModel)]="limit">
+        Page : <input type="number" [(ngModel)]="page">
+        <button (click)="hit()">Run</button>
+
+        coumn: 
+        <select name="" id="" [(ngModel)]="column">
+
+            <option value="name">name</option>
+            <option value="city">city</option>
+            <option value="dob">dob</option>
+            
+        </select>
+
+        order:
+        <select name="" id="" [(ngModel)]="order">
+            <option value="asc">ascending</option>
+            <option value="desc">descending</option>
+        </select>
+
+        <button (click)="sort()">sort</button>
+
+
+    </div>
+    <div class="class2" >
+        <div class="class3" *ngFor="let id of ram">
+            <div class="top">
+                {{id.school_name}}
+            </div>
+            <div class="mid">
+                <div class="left">
+                    Name : {{id.name}}
+                    <br>
+                   D.O.B : {{id.dob}}
+                    <br>
+                    Phone : {{id.phone}}
+                    <br>
+                    City : {{id.city}}
+                    <br>
+                    Email : {{id.email}}
+                </div>
+                <div class="right">
+                    <img src="{{id.profile_picture}}" alt="">
+                </div>
+            </div>
+            <div class="bot">
+                <button>View</button>
+                <button>Edit</button>
+                <button (click)="delete(id.id)">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

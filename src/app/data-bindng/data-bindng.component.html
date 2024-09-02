@@ -1,0 +1,41 @@
+<p>data-bindng works!</p>
+
+<!-- Interpolation {{ }} -->
+<h1>My age is {{age}}</h1>
+<h2>My name is {{name}}</h2>
+<h2>Indian : {{isIndian}}</h2>
+
+<!-- Porperty Binding  [ ]=" " -->
+<button [disabled]="isvalid">Submit</button>
+<img [src]="url" alt="">
+
+
+<!-- Event Binding ( )=" "-->
+ <button (click)="submit()">Submit</button>
+ <input (keypress)="typing()"  type="text" >
+
+ <!-- Two Way Data Binding [( )]=" "-->
+  <label for="">Mob No.</label>
+  <input type="text" [(ngModel)]="phone">
+  <p>{{phone}}</p>
+
+
+
+  
+
+<!-- Practive -->
+
+<h1>{{city}}</h1>
+<h1>{{name}}</h1>
+<h1>{{ram}}</h1>
+
+
+<input type="text" ((keyup))="isdisabled">
+<button [disabled]="isdisabled">Submit</button>
+<br>
+<br>
+
+<!-- <button [class]="isactive?'active':'inactive'"> Radius</button> -->
+<button [class]="{'inactive':false}"> Radius</button>
+
+

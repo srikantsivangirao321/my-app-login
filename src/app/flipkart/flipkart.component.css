@@ -1,0 +1,108 @@
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    margin: 20px 0;
+    border: 1px solid #ddd; /* Light border for the table */
+}
+
+/* Header styling */
+thead {
+    background-color: #ff9900; /* Vibrant orange for the header */
+    color: #ffffff; /* White text for better contrast */
+}
+
+th {
+    padding: 12px;
+    border-bottom: 2px solid #ffffff; /* White border to separate header cells */
+    text-align: left; /* Align text to the left */
+    font-weight: bold; /* Bold text for headers */
+}
+
+/* Body styling */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* White background for odd rows */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Light gray border for cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Heading styling */
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #333333; /* Dark gray color for heading */
+    border-bottom: 3px solid #ff9900; /* Orange border at the bottom of the heading */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#delete{
+    color: white;
+    background-color: red;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.HL{
+    color: black;
+    background-color: #ff9900;
+    border: 0;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.Dis{
+    color: black;
+    background-color: aqua;
+    border: 0;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.Total{
+    color: white;
+    background-color: grey;
+    border: 0;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.art{
+    color: white;
+    background-color: green;
+    border: 0;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.parent{
+    height: 75vh;
+    width: 75vw;
+}
+
+.top{
+    height: 40%;
+    width: 100%;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 75%;
+}
+.right{
+    height: 100%;
+    width: 20%;
+}

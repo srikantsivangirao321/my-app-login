@@ -1,0 +1,6 @@
+.actice{
+    border-radius: 0;
+}
+.inactive{
+    border-radius: 30px;
+}

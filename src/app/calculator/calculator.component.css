@@ -1,0 +1,56 @@
+/* Ensure the parent div takes up full viewport height for centering */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the child div */
+.child {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style labels and inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style the buttons */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+button:disabled{
+    opacity: 0.5;
+}
+
+/* Style the result text */
+h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}

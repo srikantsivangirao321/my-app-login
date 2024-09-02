@@ -1,0 +1,14 @@
+<div class="parent">
+    <div class="child">
+        <label for="">Length : </label>
+        <input type="number" [(ngModel)]="len">
+        <br>
+        <label for="">Breadth : </label>
+        <input type="number" [(ngModel)]="bre">
+        <br>
+        <button [disabled]="!len || !bre" (click)="are()">Area</button>
+        <button [disabled]="!len || !bre" (click)="per()">Perimeter</button>
+        <H2>Result is {{answer}}</H2>
+    
+    </div>
+</div>

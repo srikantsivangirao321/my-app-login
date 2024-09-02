@@ -1,0 +1,10 @@
+.parent{
+background-color: white;
+font-weight: 900;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-transform: capitalize;
+}
+button{
+    border: 0;
+    background-color: white;
+}
