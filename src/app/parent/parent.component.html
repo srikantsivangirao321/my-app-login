@@ -1,0 +1,15 @@
+<p>parent works!</p>
+<div>
+    <input type="text" [(ngModel)]="ap">
+
+</div>
+
+<h1>b in parent: {{bp}}</h1>
+
+<app-child [ac]="ap" (bEvent)="catch($event)"> </app-child>
+<!-- <button [disabled]="true" (click)="submit()"></button> -->
+<br>
+<br>
+<br>   
+
+<app-textarea ></app-textarea>

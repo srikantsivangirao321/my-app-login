@@ -1,0 +1,93 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Parent container styling */
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f4f8, #d0e2ff);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 80%;
+}
+
+/* Styling for the paragraph */
+.parent p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Child container styling */
+.child {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling for app-todo elements */
+app-todo1,
+app-todo2,
+app-todo3 {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px); /* Three columns with space */
+    max-width: calc(33% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    height: 430px;
+}
+
+/* Add colors to the app-todo elements */
+app-todo1 {
+    background-color: #fef2f2;
+    border: 2px solid #f87171;
+}
+
+app-todo2 {
+    background-color: #f0f9ff;
+    border: 2px solid #60a5fa;
+    overflow: auto;
+}
+
+app-todo3 {
+    background-color: #fdfdcb;
+    border: 2px solid #facc15;
+}
+
+/* Hover effect for app-todo elements */
+/* app-todo1:hover,
+app-todo2:hover,
+app-todo3:hover {
+    background-color: #fef7f7;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+} */
+
+/* Responsive design: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .child {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    app-todo1,
+    app-todo2,
+    app-todo3 {
+        max-width: 100%;
+    }
+}

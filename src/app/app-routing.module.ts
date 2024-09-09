@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -26,6 +26,17 @@ import { AuthenticationGuard } from './authentication.guard';
 import { MemesComponent } from './memes/memes.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewBankaccountsComponent } from './view-bankaccounts/view-bankaccounts.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateMarksComponent } from './create-marks/create-marks.component';
+import { ChildComponent } from './child/child.component';
+import { ParentComponent } from './parent/parent.component';
+import { RatingsComponent } from './ratings/ratings.component';
+import { TextareaComponent } from './textarea/textarea.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { CartComponent } from './cart/cart.component';
+import { TodoComponent } from './todo/todo.component';
+import { AboutUsModule } from './about-us/about-us.module';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -53,14 +64,28 @@ const routes: Routes = [
     {path:'view-vehicle/:id',component:ViewVehicleComponent},
     {path:'view-bankaccount/:id',component:ViewBankaccountsComponent},
     {path:'edit-bankaccount/:id',component:CreateBankComponent},
+    {path:'create-user',component:CreateUserComponent},
+    {path:'create-marks',component:CreateMarksComponent},
+    {path:'parent',component:ParentComponent},
+    {path:'ratings',component:RatingsComponent},
+    {path:'textarea',component:TextareaComponent},
+    {path:'sibling',component:SiblingComponent},
+    {path:'cart',component:CartComponent},
+    {path:'todo',component:TodoComponent},
+    {
+      path: 'payment',
+      loadChildren: () => import('./payment/payment.module').then(m => m.PaymentModule)
+    },
+    {path:'about-company',component:AboutCompanyComponent},
     {path:'',component:WelcomeComponent}]},
   {path:'',component:LoginComponent},
-  {path:'**',component:PageNotFoundComponent}
+  {path:'**',component:PageNotFoundComponent},
+  
   
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

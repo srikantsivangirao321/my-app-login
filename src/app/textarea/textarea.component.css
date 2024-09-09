@@ -1,0 +1,28 @@
+.textarea-container {
+    position: relative;
+    display: inline-block;
+}
+
+textarea {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* Disable resizing if needed */
+    position: relative;
+}
+
+span {
+    bottom: 10px; /* Adjust based on padding */
+    right: 10px; /* Adjust based on padding */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+    padding: 2px 5px;
+    border-radius: 3px;
+    color: #333;
+    font-size: 12px;
+    position: relative;
+    z-index: 5;
+    margin: -30px;
+
+}

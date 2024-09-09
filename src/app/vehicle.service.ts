@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class VehicleService {
 
-  public baseUrl:string = "https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction";
+  // public baseUrl:string = "https://6128991386a213001729f9df.mockapi.io/test/v1/jurisdiction";
+  public baseUrl:string = "./assets/vehicle.json";
+
 
   constructor(private _httpClient:HttpClient) { }
 

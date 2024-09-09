@@ -31,6 +31,28 @@ import { CreateidentityCardComponent } from './createidentity-card/createidentit
 import { MemesComponent } from './memes/memes.component';
 import { ViewVehicleComponent } from './view-vehicle/view-vehicle.component';
 import { ViewBankaccountsComponent } from './view-bankaccounts/view-bankaccounts.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { CreateMarksComponent } from './create-marks/create-marks.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { RatingsComponent } from './ratings/ratings.component';
+import { TextareaComponent } from './textarea/textarea.component';
+import { OpertaionsComponent } from './opertaions/opertaions.component';
+import { SiblingComponent } from './sibling/sibling.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { CartComponent } from './cart/cart.component';
+import { Cart1Component } from './cart1/cart1.component';
+import { Cart2Component } from './cart2/cart2.component';
+import { Cart3Component } from './cart3/cart3.component';
+import { Cart4Component } from './cart4/cart4.component';
+import { TodoComponent } from './todo/todo.component';
+import { Todo1Component } from './todo1/todo1.component';
+import { Todo2Component } from './todo2/todo2.component';
+import { Todo3Component } from './todo3/todo3.component';
+import { AboutUsModule } from './about-us/about-us.module';
+import { CapitalDirective } from './capital.directive';
+import { PricePipe } from './price.pipe';
 
 @NgModule({
   declarations: [
@@ -61,13 +83,35 @@ import { ViewBankaccountsComponent } from './view-bankaccounts/view-bankaccounts
     MemesComponent,
     ViewVehicleComponent,
     ViewBankaccountsComponent,
+    CreateUserComponent,
+    CreateMarksComponent,
+    ParentComponent,
+    ChildComponent,
+    RatingsComponent,
+    TextareaComponent,
+    OpertaionsComponent,
+    SiblingComponent,
+    Sibling1Component,
+    Sibling2Component,
+    CartComponent,
+    Cart1Component,
+    Cart2Component,
+    Cart3Component,
+    Cart4Component,
+    TodoComponent,
+    Todo1Component,
+    Todo2Component,
+    Todo3Component,
+    CapitalDirective,
+    PricePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

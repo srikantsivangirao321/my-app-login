@@ -1,0 +1,24 @@
+<div *ngFor="let data of text; let i=index">
+
+
+<!-- For single create
+    <p>{{text[0].datatext}}</p>
+    <p>{{text[0].datatime}}</p>  -->
+
+
+<!-- For multiple create -->
+    <p>{{data.datatext}}</p>
+    <p>{{data.datatime}}</p>
+
+<!-- View Section  -->
+    <button (click)="view(i)">View</button>
+    <button (click)="edit(i)">Edit</button>
+    <button (click)="delete(i)">Delete</button>
+  
+
+   
+</div>
+
+
+
+

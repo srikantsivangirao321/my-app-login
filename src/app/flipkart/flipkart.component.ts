@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-flipkart',
@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./flipkart.component.css']
 })
 export class FlipkartComponent {
-
 
   public ram:any='';
   public products:any = [
